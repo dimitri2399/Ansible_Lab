@@ -9,7 +9,7 @@ pipeline {
                     sh 'zip -r ansible-codes.zip * -x Jenkinsfile'
                     
                     // Upload the zip file to JFrog Artifactory
-                    sh 'curl -uadmin:AP7DYM4ou6knYX5jb6HUcZXHc3L -T ansible-codes.zip "http://34.232.70.48:8081/artifactory/ansible-codes"'
+                    sh 'curl -uadmin:AP7DYM4ou6knYX5jb6HUcZXHc3L -T ansible-codes.zip "http://34.232.70.48:8081/artifactory/ansible-codes/ansible-codes.zip"'
                 }
             }
         }
